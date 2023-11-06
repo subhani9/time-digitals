@@ -3,6 +3,7 @@ import HeaderLogo from "../../assets/logo.png";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 import { MdMenu } from "react-icons/md";
+import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa6";
 
 const Header = () => {
   return (
@@ -36,11 +37,7 @@ const Header = () => {
                   About
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink to="/projects" className="nav-link">
-                  Projects
-                </NavLink>
-              </li>
+
               <li className="nav-item">
                 <NavLink to="/services" className="nav-link">
                   Services
@@ -52,13 +49,32 @@ const Header = () => {
                 </NavLink>
               </li>
             </ul>
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 nav-btn">
-              <a href="https://wa.me/9010611618" target="_blank">
+
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 nav-icons">
+              <li className="nav-item">
+                <a href="/" target="_blank" className="navicons">
+                  <FaInstagram />
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="/" target="_blank" className="navicons">
+                  <FaTwitter />
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="/" target="_blank" className="navicons">
+                  <FaLinkedin />
+                </a>
+              </li>
+            </ul>
+
+            {/* <ul className="navbar-nav ms-auto mb-2 mb-lg-0 nav-btn">
+              <a href="https://wa.me/9391069394" target="_blank">
                 <button type="button" className="btn talk">
                   Let's Talk
                 </button>
               </a>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </nav>

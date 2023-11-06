@@ -21,8 +21,8 @@
     font-weight: 500;
 }
 .pnf-btn{
-    color:#293F19;
-    border: 1px solid #293F19;
+    color:#E10834;
+    border: 1px solid #E10834;
     text-decoration: none;
     padding:0.3rem 1rem;
     margin-top: 0.5rem;
@@ -30,7 +30,7 @@
     font-size: 0.9rem;
 }
 .pnf-btn:hover{
-    background-color:#293F19;
+    background-color:#E10834;
     color:#fff;
     transition: 0.4sec ease-in-out;
 }

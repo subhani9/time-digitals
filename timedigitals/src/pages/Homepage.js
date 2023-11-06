@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "../components/layout/Layout.js";
 import "./Homepage.css";
 // import Whatsapp from "../assets/Whatsapp.png";
-// import Heroimg from "../assets/Hero.png";
+import Heroimg from "../assets/Hero.png";
 // import "../pages/About.css";
 // import { BsArrowRight } from "react-icons/bs";
 // import Img1 from "../assets/Hero-1.png";
@@ -33,90 +33,85 @@ import "./Homepage.css";
 // import Clientlogo4 from "../assets/c-t4.png";
 
 const Homepage = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  //   const settings = {
+  //     dots: true,
+  //     infinite: true,
+  //     speed: 500,
+  //     slidesToShow: 1,
+  //     slidesToScroll: 1,
+  //   };
 
   return (
-    <Layout title={"Culture Concept/Home"}>
+    <Layout title={"Time Digitals/Home"}>
       {/* Hero Banner */}
       <section className="Hero">
         <div className="container">
           <div className="row">
             <div
-              className="col-lg-6 col-md-6 col-sm-12"
-              data-aos="zoom-in-right"
+              className="col-lg-8 col-md-6 col-sm-12"
+              //   data-aos="fade-up"
+              //   data-aos-anchor-placement="center-bottom"
             >
-              <div className="copy">
-                <div className="text-bold">
-                  Transform
-                  <br />
-                  your space
-                </div>
-                <div className="header-button">
-                  <a href="header" className="btn btn-outline filled">
-                    Start Project
-                    <span className="arrow">
-                      <BsArrowRight />
-                    </span>
-                  </a>
-                  <a href="/projects" className="btn btn-outline">
-                    View More
-                    <span className="arrow">
-                      <BsArrowRight />
-                    </span>
-                  </a>
-                </div>
-                <div className="text-hero-regular">
-                  The mind creates the beautiful.
-                  <br />
-                  The heart creates the Home,
-                  <br />
-                  home sweet home
-                </div>
-                <div className="Hero-images">
-                  <div className="Wrap">
-                    <img src={Img1} className="hero-image2" alt="works" />
-                    <img src={Img2} className="hero-image2" alt="works" />
-                    <img src={Img3} className="hero-image2" alt="works" />
-                  </div>
-                </div>
+              <div className="heroimageside">
+                <img
+                  src={Heroimg}
+                  alt="Hero Image"
+                  className="hero-image w-100"
+                />
               </div>
             </div>
             <div
-              className="col-lg-4 col-md-6 col-sm-12 house"
-              data-aos="zoom-in-left"
+              className="col-lg-4 col-md-6 col-sm-12"
+              //   data-aos="zoom-in-right"
             >
-              <img
-                src={House}
-                alt="House Image"
-                className="house-image w-100"
-              />
-            </div>
-
-            <div
-              className="col-lg-2 col-md-6 col-sm-12"
-              data-aos="zoom-in-left"
-            >
-              <div className="year">Interior Design Company Since 2015</div>
-              <div className="scrollimg">
-                <CgScrollV />
-                <div className="scroll-text">SCROLL DOWN</div>
+              <div className="copy">
+                <div className="top-small">TIME DIGITALS</div>
+                <div className="text-bold">
+                  Everything you can imagine is an Art
+                </div>
+                <div className="bottom-small">
+                  Let us help you with all of your printing & graphics
+                </div>
+                <div className="Hero-Button">
+                  <a href="https://wa.me/9391069394" target="_blank">
+                    <button className="hero-btn">Get Quote</button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="wrapper">
-          <a href="https://wa.me/9010611618" target="_blank">
-            <img src={Whatsapp} alt="whatsapp-logo" className="whatsapp-logo" />
-          </a>
+      </section>
+      {/* Long Strip */}
+      <section className="Long">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-5 col-md-6 col-sm-12">
+              <div className="Long-text">
+                Flex and Banner
+                <br />
+                <span className="L-change">Printing Machine</span>
+              </div>
+            </div>
+            <div className="col-lg-7 col-md-6 col-sm-12">
+              <div className="Long-regular">
+                Prominent & Leading Service Provider from Hyderabad, we offer
+                solvent banner printing machines, konica minolta flex printing
+                machine, konica flex printing machine, rodin solvent printers
+                konika 512i, used automatic flex printing machine and used
+                digital banner printing machine.
+              </div>
+              {/* <img
+                src={videoimg}
+                className="project-img w-100"
+                alt="project image"
+              /> */}
+            </div>
+          </div>
         </div>
       </section>
-      <hr />
+
+      {/*
       {/* Client Testimonial */}
       {/* <section className="Client-testimonial">
         <div className="container">

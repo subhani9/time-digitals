@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Header from "./Header";
 import Footer from "./Footer";
-import "../layout/Layout.css";
+// import "../layout/Layout.css";
 
 const Layout = ({ children, title, description, keywords, author }) => {
   return (
